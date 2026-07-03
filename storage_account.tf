@@ -8,7 +8,7 @@ resource "azurerm_storage_account" "storage_account" {
   location                         = var.resource_group.location
   allow_nested_items_to_be_public  = false
   cross_tenant_replication_enabled = false
-  account_kind                     = "BlobStorage"
+  account_kind                     = var.account_kind
   account_tier                     = "Standard"
   account_replication_type         = "LRS"
   access_tier                      = "Cool"
