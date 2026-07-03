@@ -10,3 +10,9 @@ variable "resource_group" {
     location = string
   })
 }
+
+variable "account_kind" {
+  description = "Defines the Kind of account."
+  type        = string
+  default     = "StorageV2"
+}
